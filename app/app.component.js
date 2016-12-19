@@ -1,4 +1,4 @@
-System.register(['angular2/core', './courses.component', './authors.component', './favorite.component', './like.component', './voter.component', './twitter.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './courses.component', './authors.component', './favorite.component', './like.component', './voter.component', './twitter.component', './zippy.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './courses.component', './authors.component', 
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, courses_component_1, authors_component_1, favorite_component_1, like_component_1, voter_component_1, twitter_component_1;
+    var core_1, courses_component_1, authors_component_1, favorite_component_1, like_component_1, voter_component_1, twitter_component_1, zippy_component_1;
     var AppComponent;
     return {
         setters:[
@@ -34,6 +34,9 @@ System.register(['angular2/core', './courses.component', './authors.component', 
             },
             function (twitter_component_1_1) {
                 twitter_component_1 = twitter_component_1_1;
+            },
+            function (zippy_component_1_1) {
+                zippy_component_1 = zippy_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -60,8 +63,15 @@ System.register(['angular2/core', './courses.component', './authors.component', 
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "<h1>Hello Angular</h1>\n    <courses></courses>\n    <authors></authors>\n    <i class=\"glyphicon glyphicon-star\"></i>\n    <favorite [isFavorite]=\"post.isFavorite\" (change)=\"onFavoriteChange($event)\"></favorite>\n\n    <h3>like component</h3>\n    <like [liked]=\"tweet.liked\" [numLikes]=\"tweet.numLikes\"></like>\n\n    <h3>voter component</h3>\n    <voter></voter>\n\n    <h3>tweet challenge</h3>\n    <twitter></twitter>\n    ",
-                        directives: [courses_component_1.CoursesComponent, authors_component_1.AuthorsComponent, favorite_component_1.FavoriteComponent, like_component_1.LikeComponent, voter_component_1.VoterComponent, twitter_component_1.TwitterComponent]
+                        template: "<h1>Hello Angular</h1>\n    <courses></courses>\n    <authors></authors>\n    <i class=\"glyphicon glyphicon-star\"></i>\n    <favorite [isFavorite]=\"post.isFavorite\" (change)=\"onFavoriteChange($event)\"></favorite>\n\n    <h3>like component</h3>\n    <like [liked]=\"tweet.liked\" [numLikes]=\"tweet.numLikes\"></like>\n\n    <h3>voter component</h3>\n    <voter></voter>\n\n    <h3>tweet challenge</h3>\n    <twitter></twitter>\n\n    <h3>Zippy exercise</h3>\n    <zippy title=\"helloTitle\">\n       <p>YOLO BODY CONTENT</p>\n    </zippy>\n    <zippy title=\"greetings\">\n        <h2>There's a shark behind you!</h2>\n    </zippy>\n    ",
+                        directives: [
+                            courses_component_1.CoursesComponent,
+                            authors_component_1.AuthorsComponent,
+                            favorite_component_1.FavoriteComponent,
+                            like_component_1.LikeComponent,
+                            voter_component_1.VoterComponent,
+                            twitter_component_1.TwitterComponent,
+                            zippy_component_1.ZippyComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

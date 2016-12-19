@@ -6,6 +6,7 @@ import {FavoriteComponent} from './favorite.component';
 import {LikeComponent} from './like.component';
 import {VoterComponent} from './voter.component';
 import {TwitterComponent} from './twitter.component';
+import {ZippyComponent} from './zippy.component';
 
 @Component({
     selector: 'my-app',
@@ -23,8 +24,23 @@ import {TwitterComponent} from './twitter.component';
 
     <h3>tweet challenge</h3>
     <twitter></twitter>
+
+    <h3>Zippy exercise</h3>
+    <zippy title="helloTitle">
+       <p>YOLO BODY CONTENT</p>
+    </zippy>
+    <zippy title="greetings">
+        <h2>There's a shark behind you!</h2>
+    </zippy>
     `,
-    directives: [CoursesComponent, AuthorsComponent, FavoriteComponent, LikeComponent, VoterComponent, TwitterComponent]
+    directives: [
+        CoursesComponent, 
+        AuthorsComponent, 
+        FavoriteComponent, 
+        LikeComponent, 
+        VoterComponent, 
+        TwitterComponent, 
+        ZippyComponent]
 })
 
 export class AppComponent { 
