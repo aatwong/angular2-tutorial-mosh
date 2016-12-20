@@ -7,6 +7,10 @@ import {LikeComponent} from './like.component';
 import {VoterComponent} from './voter.component';
 import {TwitterComponent} from './twitter.component';
 import {ZippyComponent} from './zippy.component';
+import {ContactFormComponent} from './contact-form.component';
+import {SubscriptionFormComponent} from './subscription-form.component';
+import {SignUpFormComponent} from './signup-form.component';
+import {ChangePasswordComponent} from './change-password.component';
 
 @Component({
     selector: 'my-app',
@@ -32,6 +36,19 @@ import {ZippyComponent} from './zippy.component';
     <zippy title="greetings">
         <h2>There's a shark behind you!</h2>
     </zippy>
+
+    <h3>contact form lecture exercise</h3>
+    <contact-form></contact-form>
+
+    <h3>subscription form exercise (lecture 73)</h3>
+    <subscription-form></subscription-form>
+
+    <h3>signup form lecture exercise</h3>
+    <signup-form></signup-form>
+
+    <h3>change password form exercies (lecture 73)</h3>
+    <change-password></change-password>
+
     `,
     directives: [
         CoursesComponent, 
@@ -40,7 +57,11 @@ import {ZippyComponent} from './zippy.component';
         LikeComponent, 
         VoterComponent, 
         TwitterComponent, 
-        ZippyComponent]
+        ZippyComponent,
+        ContactFormComponent,
+        SubscriptionFormComponent,
+        SignUpFormComponent,
+        ChangePasswordComponent]
 })
 
 export class AppComponent { 
