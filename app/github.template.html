@@ -1,0 +1,24 @@
+<div class="media">
+
+  <div class="media-left">
+    <a href="#">
+      <img class="user-profile avatar" src="{{userProfile?.avatar_url}}" alt="user-profile">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">@{{userProfile?.login}}</h4>
+  </div>
+
+<h3>Followers</h3>
+<div *ngFor="#follower of followers" class="media">
+
+  <div class="media-left">
+    <a href="#">
+      <img class="user-profile avatar" src="{{follower?.avatar_url}}" alt="user-profile">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">@{{follower?.login}}</h4>
+  </div>
+
+</div>

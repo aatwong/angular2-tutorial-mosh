@@ -2,7 +2,7 @@
 
   <head>
     <title>Angular 2 QuickStart</title>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!--added for font awesome -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="app/styles.css">
 
@@ -15,15 +15,23 @@
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="node_modules/rxjs/bundles/Rx.js"></script>
     <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/http.dev.js"></script>   <!-- added this for Http -->
+
+
 
     <!-- 2. Configure SystemJS -->
     <script>
       System.config({
+        map: {
+          rxjs: 'node_modules/rxjs' // added this map section
+        },  
         packages: {        
           app: {
             format: 'register',
-            defaultExtension: 'js'
-          }
+            defaultExtension: 'js',
+          },
+          rxjs: {defaultExtension: 'js'} // and added this to packages
         }
       });
       System.import('app/boot')

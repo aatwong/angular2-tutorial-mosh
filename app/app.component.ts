@@ -11,6 +11,10 @@ import {ContactFormComponent} from './contact-form.component';
 import {SubscriptionFormComponent} from './subscription-form.component';
 import {SignUpFormComponent} from './signup-form.component';
 import {ChangePasswordComponent} from './change-password.component';
+import {ObservableAppComponent} from './observable-app.component';
+import {GithubComponent} from './github.component'
+
+import {ClientComponent} from './client.component';
 
 @Component({
     selector: 'my-app',
@@ -49,6 +53,14 @@ import {ChangePasswordComponent} from './change-password.component';
     <h3>change password form exercies (lecture 73)</h3>
     <change-password></change-password>
 
+    <h3>Observable Exercise</h3>
+    <observable-app></observable-app>
+
+    <h3>Connecting to Server (section 9)</h3>
+    <client-component></client-component>
+
+    <h3>GitHub user profile exercise</h3>
+    <github></github>
     `,
     directives: [
         CoursesComponent, 
@@ -61,7 +73,10 @@ import {ChangePasswordComponent} from './change-password.component';
         ContactFormComponent,
         SubscriptionFormComponent,
         SignUpFormComponent,
-        ChangePasswordComponent]
+        ChangePasswordComponent,
+        ObservableAppComponent,
+        ClientComponent,
+        GithubComponent]
 })
 
 export class AppComponent { 
